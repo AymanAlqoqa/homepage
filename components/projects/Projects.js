@@ -9,7 +9,7 @@ export default function Projects({ id }) {
           <a href="https://to-gether.herokuapp.com/" target="_blank">
             <div className={styles.mask}>Work Together</div>
             <img
-              src="/images/projects/together.png"
+              src="/images/projects/together.PNG"
               alt="project image"
               title="Work Together"
             />
@@ -18,7 +18,7 @@ export default function Projects({ id }) {
         <li>
           <a href="https://logicteca.herokuapp.com/" target="_blank">
             <div className={styles.mask}>Logicteca Company</div>
-            <img src="/images/projects/logicteca.png" alt="project image" />
+            <img src="/images/projects/logicteca.PNG" alt="project image" />
           </a>
         </li>
         <li>
@@ -27,13 +27,13 @@ export default function Projects({ id }) {
             target="_blank"
           >
             <div className={styles.mask}>GSG G6 Students</div>
-            <img src="/images/projects/gsg_g6.png" alt="project image" />
+            <img src="/images/projects/gsg_g6.PNG" alt="project image" />
           </a>
         </li>
         <li>
           <a href="https://leannky-anty.herokuapp.com/" target="_blank">
             <div className={styles.mask}>Leanky Anty</div>
-            <img src="/images/projects/leanky.png" alt="project image" />
+            <img src="/images/projects/leanky.PNG" alt="project image" />
           </a>
         </li>
       </ul>
