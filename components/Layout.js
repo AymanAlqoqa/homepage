@@ -1,5 +1,4 @@
-const { default: Sidebar } = require("./Sidebar");
-
+import Sidebar from "./sidebar/Sidebar";
 import * as styles from "./layout.module.css";
 
 const Layout = ({ children }) => {
