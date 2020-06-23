@@ -1,0 +1,66 @@
+.sidebar {
+  height: 100vh;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  position: fixed;
+  left: 0;
+  transition: ease-out 0.5s;
+}
+.navList__container {
+  background-color: var(--sidebar-bg-color);
+  width: 200px;
+}
+.navList,
+.navBurger {
+  margin-top: 80px;
+}
+
+.navBurger {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+}
+.navBurger div {
+  width: 30px;
+  border: 1px solid var(--burger-color);
+}
+.navBurger div:nth-child(2) {
+  margin: 5px 0;
+}
+.navList {
+  list-style: none;
+  text-align: center;
+}
+.navList li {
+  padding-bottom: 70px;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+.navList li a {
+  color: var(--main-color);
+  font-family: "Krona One", sans-serif;
+  transition: ease-out 0.5s;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.navList li:hover a {
+  color: var(--accent-color);
+}
+.navBurger {
+  align-self: flex-start;
+}
+
+.sidebar.hide {
+  left: -200px;
+}

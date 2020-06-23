@@ -1,0 +1,128 @@
+.container {
+  min-height: 100vh;
+  background-color: var(--about-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image {
+  margin: 50px 0;
+}
+.image img {
+  width: 200px;
+  border-radius: 50%;
+}
+.about {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.about span:nth-child(2) {
+  color: var(--main-color);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bolder;
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about p {
+  line-height: 2;
+  font-size: 1.2rem;
+  font-family: "Kanit", sans-serif;
+  text-align: justify;
+  color: var(--burger-color);
+}
+
+.about .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .buttons button {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: var(--main-color);
+  color: var(--sidebar-bg-color);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: ease-out 0.3s;
+}
+.about .buttons button a {
+  color: currentColor;
+}
+.about .buttons button.primary {
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  margin-left: 20px;
+}
+.about .buttons button:hover {
+  box-shadow: 3px 10px 50px -2px rgba(0, 0, 0, 0.75);
+}
+
+/*skills*/
+.about .skills {
+  margin: 20px 0;
+  height: 400px;
+  text-align: center;
+  width: 60vw;
+}
+.about .skills span {
+  margin: 20px;
+  color: var(--main-color);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bolder;
+  font-family: "Kanit", sans-serif;
+}
+.skills .list {
+  margin-top: 30px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.skills .list li {
+  padding: 10px;
+  color: var(--burger-color);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  max-width: 400px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about .skills {
+    width: 50vw;
+    height: fit-content;
+  }
+
+  .about .skills .list {
+    height: fit-content;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .about .skills {
+    width: 90vw;
+  }
+  .about .skills .list {
+    height: 400px;
+    width: 60vw;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .about .skills .list li {
+    font-size: 1.2rem;
+  }
+}

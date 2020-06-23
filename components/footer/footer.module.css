@@ -1,0 +1,15 @@
+.container {
+  min-height: 30vh;
+  background-color: var(--about-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--main-color);
+  letter-spacing: 3px;
+}

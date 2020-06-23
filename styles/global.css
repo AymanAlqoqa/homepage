@@ -1,0 +1,37 @@
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:wght@300&family=Krona+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --sidebar-bg-color: #1d1f1f;
+  --main-color: #fff;
+  --burger-color: rgb(160, 160, 160);
+  --accent-color: rgb(184, 156, 32);
+  --about-bg-color: #1b1b1b;
+}
+
+.section__title {
+  color: var(--accent-color);
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 5px;
+}
