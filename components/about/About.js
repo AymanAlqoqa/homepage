@@ -20,7 +20,7 @@ export default function About({ id }) {
         </p>
         <div className={styles.buttons}>
           <button>
-            <a href="https://drive.google.com/file/d/1EOoTKjZpQ-1w3PhLzpOruPUAhE_VgmKA/view?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/file/d/1ktX8ulcFPxNjh_yjndbKe44TYTCLkwNQ/view?usp=sharing" target="_blank">
               Download Resume
             </a>
           </button>
