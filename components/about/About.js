@@ -1,7 +1,18 @@
-import * as styles from "./about.module.css";
-import Link from "next/link";
+import * as styles from './about.module.css';
+import Link from 'next/link';
+import { app } from '../../base';
 
 export default function About({ id }) {
+  const [resumes, setResumes] = React.useState([]);
+
+  React.useEffect(() => {
+    const db = app.firestore();
+    const fetchResume = async () => {
+      const resumesCollection = await db.collection('resumes').get();
+      setResumes(resumesCollection.docs.map((doc) => doc.data()));
+    };
+    fetchResume();
+  }, []);
   return (
     <div id={id} className={styles.container}>
       <div className={styles.image}>
@@ -19,8 +30,8 @@ export default function About({ id }) {
           work-together, a freelance working platform for south Londoners.
         </p>
         <div className={styles.buttons}>
-          <button>
-            <a href="https://drive.google.com/file/d/1ktX8ulcFPxNjh_yjndbKe44TYTCLkwNQ/view?usp=sharing" target="_blank">
+          <button disabled={!resumes[0] ? true : false}>
+            <a href={resumes[0] && resumes[0].url} target="_blank">
               Download Resume
             </a>
           </button>
